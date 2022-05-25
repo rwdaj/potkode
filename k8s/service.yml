@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: korizon
+  name: sodsaul
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "korizon"
+  - name: "sodsaul"
     port: 8080
   selector:
-    app: korizon
+    app: sodsaul
