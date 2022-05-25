@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bocprov
+  name: grbeof
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bocprov"
+  - name: "grbeof"
     port: 8080
   selector:
-    app: bocprov
+    app: grbeof
