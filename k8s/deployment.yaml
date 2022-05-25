@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: korizon
+  name: sodsaul
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: korizon
+      app: sodsaul
   template:
     metadata:
       labels:
-        app: korizon
+        app: sodsaul
     spec:
       containers:
-      - image: okteto.dev/korizon:latest
-        name: korizon
+      - image: okteto.dev/sodsaul:latest
+        name: sodsaul
         ports:
         - containerPort: 8080
         env:
