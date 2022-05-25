@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bocprov
+  name: grbeof
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bocprov
+      app: grbeof
   template:
     metadata:
       labels:
-        app: bocprov
+        app: grbeof
     spec:
       containers:
-      - image: okteto.dev/bocprov:latest
-        name: bocprov
+      - image: okteto.dev/grbeof:latest
+        name: grbeof
         ports:
         - containerPort: 8080
         env:
