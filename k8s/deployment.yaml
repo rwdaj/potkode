@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grbeof
+  name: korizon
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: grbeof
+      app: korizon
   template:
     metadata:
       labels:
-        app: grbeof
+        app: korizon
     spec:
       containers:
-      - image: okteto.dev/grbeof:latest
-        name: grbeof
+      - image: okteto.dev/korizon:latest
+        name: korizon
         ports:
         - containerPort: 8080
         env:
